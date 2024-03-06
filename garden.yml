@@ -1,0 +1,39 @@
+# At the root of your project
+apiVersion: garden.io/v1
+kind: Project
+name: my-project
+
+variables:
+  base-hostname: wsmfc-app.local.demo.garden
+
+environments:
+  - name: local
+
+providers:
+  - name: local-kubernetes
+    environments: [local]
+---
+kind: Build
+name: wsmfc
+type: container
+
+---
+
+kind: Deploy
+name: wsmfc
+type: container
+dependencies: ["wsmfc.hello"]
+spec:
+  image: ${actions.build.wsmfc.outputs.deploymentImageId}
+  sync:
+    paths:
+      - source: ./
+        target: /usr/src/app
+        mode: "one-way-replica"
+  ports:
+    - name: http
+      containerPort: 8000
+  ingresses:
+    - path: /
+      port: http
+      hostname: backend.${var.base-hostname}

@@ -1,0 +1,24 @@
+
+[2024-03-06T09:56:20.573Z] Not a project directory (or any of the parent directories): C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy
+
+[2024-03-06T09:56:20.574Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T10:05:03.141Z] A new version of Garden has been released (0.13.27).
+Please use the "garden self-update" command or re-run the installation script to upgrade to the latest version.
+
+[2024-03-06T10:05:03.213Z] You're already logged in to https://app.garden.io.
+
+[2024-03-06T10:05:14.487Z] Unable to load Garden project found at C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy: Error: Path C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy is not in a git repository root. Garden must be run from within a git repo. Please run `git init` if you're starting a new project and repository, or move the project to an existing repository, and try again.
+
+[2024-03-06T10:05:14.515Z] Garden server has successfully started at port 9777
+
+
+[2024-03-06T10:05:19.167Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T10:05:19.580Z] Connecting project...
+
+[2024-03-06T10:05:20.049Z] Ready
+
+[2024-03-06T10:05:20.156Z] Path C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy is not in a git repository root. Garden must be run from within a git repo. Please run `git init` if you're starting a new project and repository, or move the project to an existing repository, and try again.
