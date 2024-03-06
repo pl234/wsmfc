@@ -355,3 +355,18 @@ https://app.garden.io/go/qSVaD5MORN
 [2024-03-06T12:31:25.319Z] Deploying wsmfc (type container) at version v-8336b07ccb...
 
 [2024-03-06T12:31:25.788Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T12:31:27.907Z] Failed (took 2.6 sec)
+
+[2024-03-06T12:31:28.191Z] 
+View command results at: 
+
+https://app.garden.io/go/command/Y8HDBFu65C 
+
+
+[2024-03-06T12:31:28.192Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:31:28.193Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T12:31:28.194Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
