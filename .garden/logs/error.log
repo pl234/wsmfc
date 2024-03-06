@@ -1,2 +1,4 @@
 
 [2024-03-06T09:56:20.573Z] Not a project directory (or any of the parent directories): C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy
+
+[2024-03-06T10:05:20.156Z] Path C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy is not in a git repository root. Garden must be run from within a git repo. Please run `git init` if you're starting a new project and repository, or move the project to an existing repository, and try again.
