@@ -4,7 +4,7 @@ kind: Project
 name: my-project
 
 variables:
-  base-hostname: wsmfc-app.local.demo.garden
+  base-hostname: w2-app.local.demo.garden
 
 environments:
   - name: local
@@ -14,17 +14,17 @@ providers:
     environments: [local]
 ---
 kind: Build
-name: wsmfc
+name: w2
 type: container
 
 ---
 
 kind: Deploy
-name: wsmfc
+name: w2
 type: container
-dependencies: ["build.wsmfc"]
+dependencies: ["build.w2"]
 spec:
-  image: ${actions.build.wsmfc.outputs.deploymentImageId}
+  image: ${actions.build.w2.outputs.deploymentImageId}
   sync:
     paths:
       - source: ./

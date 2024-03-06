@@ -414,3 +414,111 @@ https://app.garden.io/go/command/VZaYGbFldJ
 See .garden/error.log for detailed error message
 
 [2024-03-06T12:32:33.480Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:45:04.895Z] You're already logged in to https://app.garden.io.
+
+[2024-03-06T18:45:17.121Z] Garden server has successfully started at port 9777
+
+
+[2024-03-06T18:45:17.680Z] 
+Connected to the Garden dashboard 
+Follow the link below to stream logs, run commands, and more from the Garden dashboard  
+
+https://app.garden.io/go/Ar2VoeIyI9
+
+
+[2024-03-06T18:45:23.362Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:45:24.313Z] Connecting project...
+
+[2024-03-06T18:45:24.914Z] Ready
+
+[2024-03-06T18:45:26.180Z] View command results at: https://app.garden.io/go/command/1A9qa52z3v
+
+[2024-03-06T18:45:26.409Z] Resolving providers...
+
+[2024-03-06T18:45:26.835Z] Configuring provider...
+
+[2024-03-06T18:45:26.880Z] Provider configured
+
+[2024-03-06T18:45:26.909Z] Provider ready
+
+[2024-03-06T18:45:26.927Z] Configuring provider...
+
+[2024-03-06T18:45:32.199Z] Using current context: minikube
+
+[2024-03-06T18:45:42.456Z] Failed resolving one or more providers:
+- local-kubernetes
+
+[2024-03-06T18:45:42.461Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:46:46.902Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:46:48.341Z] View command results at: https://app.garden.io/go/command/dbouyLlRxb
+
+[2024-03-06T18:46:48.344Z] Resolving providers...
+
+[2024-03-06T18:46:48.417Z] Configuring provider...
+
+[2024-03-06T18:46:48.434Z] Provider configured
+
+[2024-03-06T18:46:48.443Z] Configuring provider...
+
+[2024-03-06T18:46:48.447Z] Provider status cached
+
+[2024-03-06T18:46:48.616Z] Using current context: minikube
+
+[2024-03-06T18:46:57.226Z] Provider configured
+
+[2024-03-06T18:46:57.496Z] Ensuring nginx Ingress Controller...
+
+[2024-03-06T18:46:57.811Z] nginx Ingress Controller ready
+
+[2024-03-06T18:46:57.812Z] Provider ready
+
+[2024-03-06T18:46:57.820Z] Finished resolving providers (took 9.5 sec)
+
+[2024-03-06T18:46:57.821Z] Some provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T18:46:57.823Z] Resolving actions and modules...
+
+[2024-03-06T18:46:58.353Z] Finished resolving graph (took 0.5 sec)
+
+[2024-03-06T18:46:58.408Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T18:46:58.638Z] Status is unhealthy, wsmfc will be deployed
+
+[2024-03-06T18:46:58.641Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T18:47:02.650Z] Status is not ready, wsmfc will be built
+
+[2024-03-06T18:47:02.654Z] Building wsmfc (type container) at version v-f10632018a...
+
+[2024-03-06T18:47:06.141Z] Building wsmfc:v-2aa65eb004...
+
+[2024-03-06T18:47:14.557Z] Done (took 11.9 sec)
+
+[2024-03-06T18:47:14.559Z] Deploying wsmfc (type container) at version v-26d8f8e527...
+
+[2024-03-06T18:47:15.704Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T18:47:17.819Z] [kubernetes] Deployment/wsmfc: Pulling image "wsmfc:v-2aa65eb004"
+
+[2024-03-06T18:47:20.448Z] [kubernetes] Deployment/wsmfc: Error: ErrImagePull
+
+[2024-03-06T18:47:23.636Z] Failed (took 9.1 sec)
+
+[2024-03-06T18:47:24.333Z] 
+View command results at: 
+
+https://app.garden.io/go/command/dbouyLlRxb 
+
+
+[2024-03-06T18:47:24.335Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T18:47:24.336Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T18:47:24.350Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
