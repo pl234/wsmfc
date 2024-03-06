@@ -174,3 +174,184 @@ https://app.garden.io/go/command/CmR3yoh04F
 
 
 [2024-03-06T12:11:27.139Z] You're already logged in to https://app.garden.io.
+
+[2024-03-06T12:12:32.586Z] Garden server has successfully started at port 9777
+
+
+[2024-03-06T12:12:33.068Z] 
+Connected to the Garden dashboard 
+Follow the link below to stream logs, run commands, and more from the Garden dashboard  
+
+https://app.garden.io/go/8A3RfJX8Dz
+
+
+[2024-03-06T12:12:43.687Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:12:44.269Z] Connecting project...
+
+[2024-03-06T12:12:44.796Z] Ready
+
+[2024-03-06T12:12:45.421Z] View command results at: https://app.garden.io/go/command/TnH2gCNqw1
+
+[2024-03-06T12:12:45.668Z] Resolving providers...
+
+[2024-03-06T12:12:45.905Z] Configuring provider...
+
+[2024-03-06T12:12:45.915Z] Provider configured
+
+[2024-03-06T12:12:45.924Z] Provider ready
+
+[2024-03-06T12:12:45.933Z] Configuring provider...
+
+[2024-03-06T12:12:49.606Z] Using current context: minikube
+
+[2024-03-06T12:12:52.744Z] Provider configured
+
+[2024-03-06T12:12:52.907Z] Ensuring nginx Ingress Controller...
+
+[2024-03-06T12:12:53.082Z] nginx Ingress Controller ready
+
+[2024-03-06T12:12:53.083Z] Provider ready
+
+[2024-03-06T12:12:53.089Z] Finished resolving providers (took 7.4 sec)
+
+[2024-03-06T12:12:53.090Z] Resolving actions and modules...
+
+[2024-03-06T12:12:53.429Z] Finished resolving graph (took 0.3 sec)
+
+[2024-03-06T12:12:53.461Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T12:12:53.537Z] Status is outdated, wsmfc will be deployed
+
+[2024-03-06T12:12:53.539Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T12:12:56.484Z] Status is not ready, wsmfc will be built
+
+[2024-03-06T12:12:56.486Z] Building wsmfc (type container) at version v-f7486b3f09...
+
+[2024-03-06T12:12:57.940Z] Building wsmfc:v-9bc970e2cb...
+
+[2024-03-06T12:13:03.488Z] Done (took 7 sec)
+
+[2024-03-06T12:13:03.490Z] Deploying wsmfc (type container) at version v-f5a5fded06...
+
+[2024-03-06T12:13:04.165Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T12:13:06.269Z] [kubernetes] Deployment/wsmfc: Pulling image "wsmfc:v-9bc970e2cb"
+
+[2024-03-06T12:13:08.867Z] Failed (took 5.4 sec)
+
+[2024-03-06T12:13:09.150Z] 
+View command results at: 
+
+https://app.garden.io/go/command/TnH2gCNqw1 
+
+
+[2024-03-06T12:13:09.152Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:13:09.153Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T12:13:09.154Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:25:37.716Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:25:38.721Z] View command results at: https://app.garden.io/go/command/wjTVSq2Lbq
+
+[2024-03-06T12:25:38.723Z] Resolving actions and modules...
+
+[2024-03-06T12:25:39.099Z] Finished resolving graph (took 0.4 sec)
+
+[2024-03-06T12:25:39.113Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T12:25:39.218Z] Status is unhealthy, wsmfc will be deployed
+
+[2024-03-06T12:25:39.219Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T12:25:39.318Z] Status is not ready, wsmfc will be built
+
+[2024-03-06T12:25:39.319Z] Building wsmfc (type container) at version v-cdfbe8dae5...
+
+[2024-03-06T12:25:39.573Z] Building wsmfc:v-982d52f5a2...
+
+[2024-03-06T12:25:42.815Z] Done (took 3.5 sec)
+
+[2024-03-06T12:25:42.817Z] Deploying wsmfc (type container) at version v-8336b07ccb...
+
+[2024-03-06T12:25:43.385Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T12:25:45.482Z] [kubernetes] Deployment/wsmfc: Pulling image "wsmfc:v-982d52f5a2"
+
+[2024-03-06T12:25:48.052Z] [kubernetes] Deployment/wsmfc: Error: ErrImagePull
+
+[2024-03-06T12:25:51.148Z] Failed (took 8.3 sec)
+
+[2024-03-06T12:25:51.428Z] 
+View command results at: 
+
+https://app.garden.io/go/command/wjTVSq2Lbq 
+
+
+[2024-03-06T12:25:51.429Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:25:51.429Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T12:25:51.430Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:31:03.221Z] Garden server has successfully started at port 9777
+
+
+[2024-03-06T12:31:03.877Z] 
+Connected to the Garden dashboard 
+Follow the link below to stream logs, run commands, and more from the Garden dashboard  
+
+https://app.garden.io/go/qSVaD5MORN
+
+
+[2024-03-06T12:31:19.255Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:31:19.854Z] Connecting project...
+
+[2024-03-06T12:31:20.381Z] Ready
+
+[2024-03-06T12:31:21.046Z] View command results at: https://app.garden.io/go/command/Y8HDBFu65C
+
+[2024-03-06T12:31:21.235Z] Resolving providers...
+
+[2024-03-06T12:31:21.481Z] Configuring provider...
+
+[2024-03-06T12:31:21.493Z] Provider configured
+
+[2024-03-06T12:31:21.502Z] Provider status cached
+
+[2024-03-06T12:31:21.505Z] Configuring provider...
+
+[2024-03-06T12:31:21.637Z] Using current context: minikube
+
+[2024-03-06T12:31:24.546Z] Provider configured
+
+[2024-03-06T12:31:24.550Z] Provider status cached
+
+[2024-03-06T12:31:24.552Z] Finished resolving providers (took 3.3 sec)
+
+[2024-03-06T12:31:24.553Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T12:31:24.554Z] Resolving actions and modules...
+
+[2024-03-06T12:31:24.888Z] Finished resolving graph (took 0.3 sec)
+
+[2024-03-06T12:31:24.910Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T12:31:25.200Z] Status is unhealthy, wsmfc will be deployed
+
+[2024-03-06T12:31:25.202Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T12:31:25.317Z] Already built
+
+[2024-03-06T12:31:25.319Z] Deploying wsmfc (type container) at version v-8336b07ccb...
+
+[2024-03-06T12:31:25.788Z] [kubernetes] Waiting for resources to be ready...

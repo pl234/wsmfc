@@ -12,3 +12,15 @@
 Could not parse "wsmfc.hello" as a valid action reference. An action reference should be a "<kind>.<name>" string, where <kind> is one of 'build', 'deploy', 'run' or 'test' and <name> is a valid name of an action. You may also specify an object with separate kind and name fields.
 
 [2024-03-06T10:07:48.540Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:13:08.866Z] Failed (took 5.4 sec)
+
+[2024-03-06T12:13:09.152Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:13:09.154Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:25:51.148Z] Failed (took 8.3 sec)
+
+[2024-03-06T12:25:51.429Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:25:51.430Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
