@@ -47,3 +47,40 @@ Could not parse "wsmfc.hello" as a valid action reference. An action reference s
 [2024-03-06T18:47:24.335Z] 1 requested deploy action(s) failed!
 
 [2024-03-06T18:47:24.350Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:50:33.181Z] Failed (took 8.5 sec)
+
+[2024-03-06T18:50:33.458Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T18:50:33.462Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:56:15.930Z] Error validating container Build w2 'w2':
+
+...
+69  | type: container
+70  | workspace: ./
+-----------------^
+key "workspace" is not allowed at path [workspace]
+...
+72  | steps:
+73  |   - name: build
+74  |     image: python:3.9-slim
+75  |     commands:
+76  |       - pip install --no-cache-dir -r requirements.txt
+77  |       # Add any additional build steps here
+78  | 
+79  |   - name: tag
+80  |     image: alpine/git
+81  |     commands:
+82  |       - git tag ${var.image-tag}  # Tag the image with the specified tag
+83  |       - echo ${var.image-tag} > tag.txt  # Save the tag to a file
+--------^
+key "steps" is not allowed at path [steps]
+...
+85  | outputs:
+86  |   deploymentImageTag:
+87  |     path: tag.txt
+--------^
+key "outputs" is not allowed at path [outputs]. Available keys: apiVersion, type, name, description, internal, source, dependencies, disabled, environments, variables, varfiles, spec, kind, allowPublish, buildAtSource, copyFrom, include, exclude, timeout)
+
+[2024-03-06T18:56:15.933Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

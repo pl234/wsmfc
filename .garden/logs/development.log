@@ -594,3 +594,67 @@ https://app.garden.io/go/command/cVO2sugbEs
 See .garden/error.log for detailed error message
 
 [2024-03-06T18:50:33.462Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:55:08.105Z] Config change detected. Project will be reloaded when the next command is run.
+
+[2024-03-06T18:56:04.904Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:56:05.826Z] Connecting project...
+
+[2024-03-06T18:56:06.378Z] Ready
+
+[2024-03-06T18:56:06.792Z] View command results at: https://app.garden.io/go/command/MlKfHU63Zv
+
+[2024-03-06T18:56:07.269Z] Resolving providers...
+
+[2024-03-06T18:56:07.345Z] Configuring provider...
+
+[2024-03-06T18:56:07.356Z] Provider configured
+
+[2024-03-06T18:56:07.365Z] Configuring provider...
+
+[2024-03-06T18:56:07.369Z] Provider status cached
+
+[2024-03-06T18:56:07.556Z] Using current context: minikube
+
+[2024-03-06T18:56:15.367Z] Provider configured
+
+[2024-03-06T18:56:15.372Z] Provider status cached
+
+[2024-03-06T18:56:15.374Z] Finished resolving providers (took 8.1 sec)
+
+[2024-03-06T18:56:15.375Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T18:56:15.376Z] Resolving actions and modules...
+
+[2024-03-06T18:56:15.931Z] Error validating container Build w2 'w2':
+
+...
+69  | type: container
+70  | workspace: ./
+-----------------^
+key "workspace" is not allowed at path [workspace]
+...
+72  | steps:
+73  |   - name: build
+74  |     image: python:3.9-slim
+75  |     commands:
+76  |       - pip install --no-cache-dir -r requirements.txt
+77  |       # Add any additional build steps here
+78  | 
+79  |   - name: tag
+80  |     image: alpine/git
+81  |     commands:
+82  |       - git tag ${var.image-tag}  # Tag the image with the specified tag
+83  |       - echo ${var.image-tag} > tag.txt  # Save the tag to a file
+--------^
+key "steps" is not allowed at path [steps]
+...
+85  | outputs:
+86  |   deploymentImageTag:
+87  |     path: tag.txt
+--------^
+key "outputs" is not allowed at path [outputs]. Available keys: apiVersion, type, name, description, internal, source, dependencies, disabled, environments, variables, varfiles, spec, kind, allowPublish, buildAtSource, copyFrom, include, exclude, timeout)
+
+[2024-03-06T18:56:15.933Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

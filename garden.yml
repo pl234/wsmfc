@@ -67,24 +67,27 @@ providers:
 kind: Build
 name: w2
 type: container
-workspace: ./
 
-steps:
-  - name: build
-    image: python:3.9-slim
-    commands:
-      - pip install --no-cache-dir -r requirements.txt
-      # Add any additional build steps here
+build:
+  workspace: ./
 
-  - name: tag
-    image: alpine/git
-    commands:
-      - git tag ${var.image-tag}  # Tag the image with the specified tag
-      - echo ${var.image-tag} > tag.txt  # Save the tag to a file
+  steps:
+    - name: build
+      image: python:3.9-slim
+      commands:
+        - pip install --no-cache-dir -r requirements.txt
+        # Add any additional build steps here
+
+    - name: tag
+      image: alpine/git
+      commands:
+        - git tag ${var.image-tag}  # Tag the image with the specified tag
+        - echo ${var.image-tag} > tag.txt  # Save the tag to a file
 
 outputs:
   deploymentImageTag:
     path: tag.txt
+
 
 ---
 
