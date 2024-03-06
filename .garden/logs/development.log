@@ -658,3 +658,65 @@ key "steps" is not allowed at path [steps]
 key "outputs" is not allowed at path [outputs]. Available keys: apiVersion, type, name, description, internal, source, dependencies, disabled, environments, variables, varfiles, spec, kind, allowPublish, buildAtSource, copyFrom, include, exclude, timeout)
 
 [2024-03-06T18:56:15.933Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:58:29.945Z] Config change detected. Project will be reloaded when the next command is run.
+
+[2024-03-06T18:59:04.462Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:59:05.444Z] Connecting project...
+
+[2024-03-06T18:59:06.065Z] Ready
+
+[2024-03-06T18:59:06.519Z] View command results at: https://app.garden.io/go/command/4OwaoXCXsj
+
+[2024-03-06T18:59:06.992Z] Resolving providers...
+
+[2024-03-06T18:59:07.037Z] Configuring provider...
+
+[2024-03-06T18:59:07.046Z] Provider configured
+
+[2024-03-06T18:59:07.070Z] Configuring provider...
+
+[2024-03-06T18:59:07.074Z] Provider status cached
+
+[2024-03-06T18:59:07.259Z] Using current context: minikube
+
+[2024-03-06T18:59:15.032Z] Provider configured
+
+[2024-03-06T18:59:15.037Z] Provider status cached
+
+[2024-03-06T18:59:15.040Z] Finished resolving providers (took 8 sec)
+
+[2024-03-06T18:59:15.042Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T18:59:15.044Z] Resolving actions and modules...
+
+[2024-03-06T18:59:15.654Z] Error validating container Build w2 'w2':
+
+...
+71  | build:
+72  |   workspace: ./
+73  | 
+74  |   steps:
+75  |     - name: build
+76  |       image: python:3.9-slim
+77  |       commands:
+78  |         - pip install --no-cache-dir -r requirements.txt
+79  |         # Add any additional build steps here
+80  | 
+81  |     - name: tag
+82  |       image: alpine/git
+83  |       commands:
+84  |         - git tag ${var.image-tag}  # Tag the image with the specified tag
+85  |         - echo ${var.image-tag} > tag.txt  # Save the tag to a file
+--------^
+key "build" is not allowed at path [build]
+...
+87  | outputs:
+88  |   deploymentImageTag:
+89  |     path: tag.txt
+--------^
+key "outputs" is not allowed at path [outputs]. Available keys: apiVersion, type, name, description, internal, source, dependencies, disabled, environments, variables, varfiles, spec, kind, allowPublish, buildAtSource, copyFrom, include, exclude, timeout)
+
+[2024-03-06T18:59:15.655Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

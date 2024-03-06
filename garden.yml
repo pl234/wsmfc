@@ -1,52 +1,3 @@
-# # At the root of your project
-# apiVersion: garden.io/v1
-# kind: Project
-# name: my-project
-
-# variables:
-#   base-hostname: w2-app.local.demo.garden
-
-# environments:
-#   - name: local
-
-# providers:
-#   - name: local-kubernetes
-#     environments: [local]
-# ---
-# kind: Build
-# name: w2
-# type: container
-
-# ---
-
-# kind: Deploy
-# name: w2
-# type: container
-# dependencies: ["build.w2"]
-# spec:
-#   image: ${actions.build.w2.outputs.deploymentImageId}
-#   sync:
-#     paths:
-#       - source: ./
-#         target: /usr/src/app
-#         mode: "one-way-replica"
-#   ports:
-#     - name: http
-#       containerPort: 8000
-#   ingresses:
-#     - path: /
-#       port: http
-#       hostname: backend.${var.base-hostname}
-
-
-
-
-
-
-
-
-
-
 # At the root of your project
 apiVersion: garden.io/v1
 kind: Project
@@ -54,7 +5,7 @@ name: my-project
 
 variables:
   base-hostname: w2-app.local.demo.garden
-  image-tag: v3  # Specify the tag for your image
+  image-tag: v3
 
 environments:
   - name: local
@@ -62,32 +13,10 @@ environments:
 providers:
   - name: local-kubernetes
     environments: [local]
-
 ---
 kind: Build
 name: w2
 type: container
-
-build:
-  workspace: ./
-
-  steps:
-    - name: build
-      image: python:3.9-slim
-      commands:
-        - pip install --no-cache-dir -r requirements.txt
-        # Add any additional build steps here
-
-    - name: tag
-      image: alpine/git
-      commands:
-        - git tag ${var.image-tag}  # Tag the image with the specified tag
-        - echo ${var.image-tag} > tag.txt  # Save the tag to a file
-
-outputs:
-  deploymentImageTag:
-    path: tag.txt
-
 
 ---
 
@@ -96,7 +25,7 @@ name: w2
 type: container
 dependencies: ["build.w2"]
 spec:
-  image: w2:${actions.build.w2.outputs.deploymentImageTag}
+  image: ${actions.build.w2.outputs.deploymentImageId}
   sync:
     paths:
       - source: ./
