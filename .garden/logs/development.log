@@ -22,3 +22,56 @@ Please use the "garden self-update" command or re-run the installation script to
 [2024-03-06T10:05:20.049Z] Ready
 
 [2024-03-06T10:05:20.156Z] Path C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy is not in a git repository root. Garden must be run from within a git repo. Please run `git init` if you're starting a new project and repository, or move the project to an existing repository, and try again.
+
+[2024-03-06T10:06:51.021Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T10:06:51.643Z] Connecting project...
+
+[2024-03-06T10:06:52.317Z] Ready
+
+[2024-03-06T10:06:53.304Z] View command results at: https://app.garden.io/go/command/YoLHS6MPWu
+
+[2024-03-06T10:06:53.538Z] Resolving providers...
+
+[2024-03-06T10:06:53.810Z] Configuring provider...
+
+[2024-03-06T10:06:53.822Z] Provider configured
+
+[2024-03-06T10:06:53.830Z] Provider ready
+
+[2024-03-06T10:06:53.842Z] Configuring provider...
+
+[2024-03-06T10:06:57.846Z] Using current context: minikube
+
+[2024-03-06T10:07:00.748Z] Provider configured
+
+[2024-03-06T10:07:00.925Z] Ensuring nginx Ingress Controller...
+
+[2024-03-06T10:07:01.071Z] nginx Ingress Controller ready
+
+[2024-03-06T10:07:01.072Z] Not ready, will initialize
+
+[2024-03-06T10:07:01.247Z] Enabling minikube ingress controller addon
+
+[2024-03-06T10:07:24.381Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T10:07:26.489Z] [kubernetes] Deployment/ingress-nginx-controller: RELOAD NGINX reload triggered due to a change in configuration
+
+[2024-03-06T10:07:44.302Z] [kubernetes] Resources ready
+
+[2024-03-06T10:07:47.802Z] Provider ready
+
+[2024-03-06T10:07:47.807Z] Finished resolving providers (took 54.3 sec)
+
+[2024-03-06T10:07:47.808Z] Resolving actions and modules...
+
+[2024-03-06T10:07:48.539Z] Error validating container Deploy wsmfc 'wsmfc':
+
+...
+24  | type: container
+25  | dependencies: ["wsmfc.hello"]
+---------------------^
+Could not parse "wsmfc.hello" as a valid action reference. An action reference should be a "<kind>.<name>" string, where <kind> is one of 'build', 'deploy', 'run' or 'test' and <name> is a valid name of an action. You may also specify an object with separate kind and name fields.
+
+[2024-03-06T10:07:48.540Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

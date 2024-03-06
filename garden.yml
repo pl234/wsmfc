@@ -22,7 +22,7 @@ type: container
 kind: Deploy
 name: wsmfc
 type: container
-dependencies: ["wsmfc.hello"]
+dependencies: ["build.wsmfc"]
 spec:
   image: ${actions.build.wsmfc.outputs.deploymentImageId}
   sync:
