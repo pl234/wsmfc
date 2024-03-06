@@ -370,3 +370,47 @@ https://app.garden.io/go/command/Y8HDBFu65C
 See .garden/error.log for detailed error message
 
 [2024-03-06T12:31:28.194Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:32:22.862Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T12:32:23.696Z] View command results at: https://app.garden.io/go/command/VZaYGbFldJ
+
+[2024-03-06T12:32:23.699Z] Resolving actions and modules...
+
+[2024-03-06T12:32:24.091Z] Finished resolving graph (took 0.4 sec)
+
+[2024-03-06T12:32:24.106Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T12:32:24.200Z] Status is unhealthy, wsmfc will be deployed
+
+[2024-03-06T12:32:24.201Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T12:32:24.304Z] Status is not ready, wsmfc will be built
+
+[2024-03-06T12:32:24.305Z] Building wsmfc (type container) at version v-ea08aa7883...
+
+[2024-03-06T12:32:24.898Z] Building wsmfc:v-77bda535e7...
+
+[2024-03-06T12:32:27.943Z] Done (took 3.6 sec)
+
+[2024-03-06T12:32:27.945Z] Deploying wsmfc (type container) at version v-0cf78c21b9...
+
+[2024-03-06T12:32:28.525Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T12:32:30.614Z] [kubernetes] Deployment/wsmfc: Pulling image "wsmfc:v-77bda535e7"
+
+[2024-03-06T12:32:33.205Z] Failed (took 5.3 sec)
+
+[2024-03-06T12:32:33.477Z] 
+View command results at: 
+
+https://app.garden.io/go/command/VZaYGbFldJ 
+
+
+[2024-03-06T12:32:33.478Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T12:32:33.479Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T12:32:33.480Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
