@@ -522,3 +522,75 @@ https://app.garden.io/go/command/dbouyLlRxb
 See .garden/error.log for detailed error message
 
 [2024-03-06T18:47:24.350Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:49:10.564Z] Config change detected. Project will be reloaded when the next command is run.
+
+[2024-03-06T18:50:10.474Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T18:50:11.423Z] Connecting project...
+
+[2024-03-06T18:50:11.981Z] Ready
+
+[2024-03-06T18:50:12.388Z] View command results at: https://app.garden.io/go/command/cVO2sugbEs
+
+[2024-03-06T18:50:12.881Z] Resolving providers...
+
+[2024-03-06T18:50:12.956Z] Configuring provider...
+
+[2024-03-06T18:50:12.964Z] Provider configured
+
+[2024-03-06T18:50:12.980Z] Configuring provider...
+
+[2024-03-06T18:50:12.985Z] Provider status cached
+
+[2024-03-06T18:50:13.158Z] Using current context: minikube
+
+[2024-03-06T18:50:20.942Z] Provider configured
+
+[2024-03-06T18:50:20.949Z] Provider status cached
+
+[2024-03-06T18:50:20.952Z] Finished resolving providers (took 8.1 sec)
+
+[2024-03-06T18:50:20.954Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T18:50:20.956Z] Resolving actions and modules...
+
+[2024-03-06T18:50:20.982Z] Finished resolving graph (took 0 sec)
+
+[2024-03-06T18:50:21.008Z] Getting status for Deploy w2 (type container)...
+
+[2024-03-06T18:50:21.085Z] Status is missing, w2 will be deployed
+
+[2024-03-06T18:50:21.088Z] Getting status for Build w2 (type container)...
+
+[2024-03-06T18:50:21.232Z] Status is not ready, w2 will be built
+
+[2024-03-06T18:50:21.234Z] Building w2 (type container) at version v-df83f85b70...
+
+[2024-03-06T18:50:21.899Z] Building w2:v-d761527041...
+
+[2024-03-06T18:50:24.642Z] Done (took 3.4 sec)
+
+[2024-03-06T18:50:24.644Z] Deploying w2 (type container) at version v-0e2c5f0702...
+
+[2024-03-06T18:50:25.254Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T18:50:27.384Z] [kubernetes] Deployment/w2: Pulling image "w2:v-d761527041"
+
+[2024-03-06T18:50:30.011Z] [kubernetes] Deployment/w2: Error: ErrImagePull
+
+[2024-03-06T18:50:33.181Z] Failed (took 8.5 sec)
+
+[2024-03-06T18:50:33.456Z] 
+View command results at: 
+
+https://app.garden.io/go/command/cVO2sugbEs 
+
+
+[2024-03-06T18:50:33.458Z] 1 requested deploy action(s) failed!
+
+[2024-03-06T18:50:33.460Z] 
+See .garden/error.log for detailed error message
+
+[2024-03-06T18:50:33.462Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
