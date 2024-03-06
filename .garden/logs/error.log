@@ -2,3 +2,13 @@
 [2024-03-06T09:56:20.573Z] Not a project directory (or any of the parent directories): C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy
 
 [2024-03-06T10:05:20.156Z] Path C:\Users\101798\OneDrive - UNIPHORE SOFTWARE SYSTEMS PVT LTD\withoutStoring_mand_folder - Copy is not in a git repository root. Garden must be run from within a git repo. Please run `git init` if you're starting a new project and repository, or move the project to an existing repository, and try again.
+
+[2024-03-06T10:07:48.538Z] Error validating container Deploy wsmfc 'wsmfc':
+
+...
+24  | type: container
+25  | dependencies: ["wsmfc.hello"]
+---------------------^
+Could not parse "wsmfc.hello" as a valid action reference. An action reference should be a "<kind>.<name>" string, where <kind> is one of 'build', 'deploy', 'run' or 'test' and <name> is a valid name of an action. You may also specify an object with separate kind and name fields.
+
+[2024-03-06T10:07:48.540Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

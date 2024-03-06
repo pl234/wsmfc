@@ -1,0 +1,183 @@
+{
+    "user1.json": {
+        "sessionId": "call 1 ONE",
+        "tenant": {
+            "id": "1",
+            "slug": "399"
+        },
+        "metadataMap": {
+            "Category": "4",
+            "Sub_Category": "5",
+            "status": "Closed",
+            "Subject": "6",
+            "case_age": "7",
+            "closed_date": "8",
+            "media_type": "9",
+            "account_id": "10",
+            "account_name": "11",
+            "contact_id": "12",
+            "disconnect_reason": "13",
+            "case_id": "14",
+            "connected_duration": "15",
+            "customer_hold_duration": "16",
+            "call_ended_time": "17",
+            "user_role": "18"
+        },
+        "skill": "English"
+    },
+    "user2.json": {
+        "sessionId": "call 2",
+        "tenant": {
+            "id": "11233",
+            "slug": "Platform"
+        },
+        "metadataMap": {
+            "Category": "Banking related",
+            "Sub_Category": "Forgot PIN",
+            "status": "Active",
+            "Subject": "6",
+            "case_age": "7",
+            "closed_date": "8",
+            "media_type": "MP4",
+            "account_id": "10",
+            "account_name": "11",
+            "contact_id": "12",
+            "disconnect_reason": "User",
+            "case_id": "14",
+            "connected_duration": "15",
+            "customer_hold_duration": "16",
+            "call_ended_time": "17",
+            "user_role": "Assist"
+        }
+    },
+    "user3.json": {
+        "tenant": {
+            "id": "11233",
+            "slug": "PE"
+        },
+        "metadataMap": {
+            "Category": "Banking related",
+            "Sub_Category": "Forgot PIN",
+            "status": "Active",
+            "Subject": "Banking request",
+            "case_age": "7",
+            "closed_date": "8",
+            "media_type": "MP4",
+            "account_id": "10",
+            "account_name": "11",
+            "contact_id": "12",
+            "disconnect_reason": "User",
+            "case_id": "USER_DEFINED",
+            "connected_duration": "15 minutes 6 seconds",
+            "customer_hold_duration": "16",
+            "call_ended_time": "17",
+            "user_role": "Assist"
+        },
+        "sessionId": "calling3"
+    },
+    "user4.txt": {
+        "sessionId": "Phone Call 4 FOUR",
+        "tenant": {
+            "id": "87",
+            "slug": "Engineering"
+        },
+        "metadataMap": {
+            "Category": "Bussiness",
+            "Sub_Category": "Idea",
+            "status": "running",
+            "case_age": "99",
+            "Subject": "uS",
+            "closed_date": "12-12-12",
+            "type": "media",
+            "request": "accesed",
+            "region": "IN",
+            "duration": "10mins"
+        }
+    },
+    "user5.json": {
+        "tenant": {
+            "id": "11233",
+            "slug": "3"
+        },
+        "metadataMap": {
+            "Category": "Banking related",
+            "Sub_Category": "Forgot PIN",
+            "status": "Active",
+            "Subject": "6",
+            "case_age": "7",
+            "closed_date": "8",
+            "media_type": "MP4",
+            "Country": "INDIA",
+            "Country Code": "+91",
+            "contact_id": "12",
+            "disconnect_reason": "User",
+            "case_id": "14",
+            "connected_duration": "15",
+            "customer_hold_duration": "16",
+            "call_ended_time": "17",
+            "user_role": "Assist"
+        },
+        "sessionId": "call 5"
+    },
+    "user6.txt": {
+        "sessionId": " Number 6 CALL",
+        "tenant": {
+            "id": "45678",
+            "slug": " SLUG"
+        },
+        "metadataMap": {
+            "Category": "Bussiness Meeting",
+            "Sub_Category": "Idea Presenting",
+            "status": "on going",
+            "case_age": "some age",
+            "Subject": "uS",
+            "closed_date": "11-11-11",
+            "type": "media",
+            "request": "allowed",
+            "region": "IN",
+            "duration": "40 Mins",
+            "new1": "OOOOO"
+        }
+    },
+    "user7.txt": {
+        "sessionId": " Token 7",
+        "tenant": {
+            "id": "6676776",
+            "slug": " dept"
+        },
+        "metadataMap": {
+            "Category": "Project Meeting",
+            "Sub_Category": "Presenting",
+            "status": "on going",
+            "case_age": "some age",
+            "Subject": "SEVEN",
+            "closed_date": "7-7-7",
+            "Tone_sentiment": "Happy"
+        }
+    },
+    "user8.json": {
+        "sessionId": "8th call Inside folder",
+        "tenant": {
+            "id": "1",
+            "slug": "399"
+        },
+        "metadataMap": {
+            "Category": "4",
+            "Sub_Category": "5",
+            "status": "Closed",
+            "Subject": "6",
+            "case_age": "7",
+            "closed_date": "8",
+            "media_type": "9",
+            "account_id": "10",
+            "account_name": "11",
+            "contact_id": "12",
+            "disconnect_reason": "13",
+            "case_id": "14",
+            "connected_duration": "15",
+            "customer_hold_duration": "16",
+            "call_ended_time": "17",
+            "user_role": "18"
+        }
+    }
+}

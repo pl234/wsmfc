@@ -75,3 +75,102 @@ Please use the "garden self-update" command or re-run the installation script to
 Could not parse "wsmfc.hello" as a valid action reference. An action reference should be a "<kind>.<name>" string, where <kind> is one of 'build', 'deploy', 'run' or 'test' and <name> is a valid name of an action. You may also specify an object with separate kind and name fields.
 
 [2024-03-06T10:07:48.540Z] ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T10:08:52.754Z] Config change detected. Project will be reloaded when the next command is run.
+
+[2024-03-06T10:09:14.706Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T10:09:15.388Z] Connecting project...
+
+[2024-03-06T10:09:15.974Z] Ready
+
+[2024-03-06T10:09:16.339Z] View command results at: https://app.garden.io/go/command/CmR3yoh04F
+
+[2024-03-06T10:09:16.757Z] Resolving providers...
+
+[2024-03-06T10:09:16.809Z] Configuring provider...
+
+[2024-03-06T10:09:16.818Z] Provider configured
+
+[2024-03-06T10:09:16.824Z] Provider status cached
+
+[2024-03-06T10:09:16.828Z] Configuring provider...
+
+[2024-03-06T10:09:16.999Z] Using current context: minikube
+
+[2024-03-06T10:09:19.974Z] Provider configured
+
+[2024-03-06T10:09:19.977Z] Provider status cached
+
+[2024-03-06T10:09:19.979Z] Finished resolving providers (took 3.2 sec)
+
+[2024-03-06T10:09:19.980Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T10:09:19.981Z] Resolving actions and modules...
+
+[2024-03-06T10:09:20.002Z] Finished resolving graph (took 0 sec)
+
+[2024-03-06T10:09:20.032Z] Getting status for Deploy wsmfc (type container)...
+
+[2024-03-06T10:09:20.138Z] Status is missing, wsmfc will be deployed
+
+[2024-03-06T10:09:20.141Z] Getting status for Build wsmfc (type container)...
+
+[2024-03-06T10:09:23.277Z] Status is not ready, wsmfc will be built
+
+[2024-03-06T10:09:23.279Z] Building wsmfc (type container) at version v-23a2a2305c...
+
+[2024-03-06T10:09:25.016Z] Building wsmfc:v-65c1f57bae...
+
+[2024-03-06T10:09:40.072Z] Done (took 16.8 sec)
+
+[2024-03-06T10:09:40.074Z] Deploying wsmfc (type container) at version v-896478c28f...
+
+[2024-03-06T10:09:40.642Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-03-06T10:09:42.672Z] [kubernetes] Resources ready
+
+[2024-03-06T10:09:42.696Z] Ingress: http://backend.wsmfc-app.local.demo.garden
+
+[2024-03-06T10:09:42.697Z] Done (took 2.6 sec)
+
+[2024-03-06T10:09:42.770Z] Done! 
+
+[2024-03-06T10:09:43.052Z] 
+View command results at: 
+
+https://app.garden.io/go/command/CmR3yoh04F 
+
+
+[2024-03-06T10:09:43.054Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Command deploy completed successfully! ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-03-06T10:13:13.262Z] Resolving providers...
+
+[2024-03-06T10:13:13.269Z] Configuring provider...
+
+[2024-03-06T10:13:13.276Z] Provider configured
+
+[2024-03-06T10:13:13.284Z] Provider status cached
+
+[2024-03-06T10:13:13.288Z] Configuring provider...
+
+[2024-03-06T10:13:13.398Z] Using current context: minikube
+
+[2024-03-06T10:13:16.296Z] Provider configured
+
+[2024-03-06T10:13:16.303Z] Provider status cached
+
+[2024-03-06T10:13:16.308Z] Finished resolving providers (took 3.1 sec)
+
+[2024-03-06T10:13:16.309Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-03-06T10:13:16.312Z] Resolving actions and modules...
+
+[2024-03-06T10:13:16.640Z] Finished resolving graph (took 0.3 sec)
+
+[2024-03-06T10:13:16.641Z] Finished initializing Garden (took 5.9 sec)
+
+
+[2024-03-06T12:11:27.139Z] You're already logged in to https://app.garden.io.
